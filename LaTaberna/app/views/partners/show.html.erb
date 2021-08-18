@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id player1:</strong>
+  <%= @partner.id_player1 %>
+</p>
+
+<p>
+  <strong>Id player2:</strong>
+  <%= @partner.id_player2 %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @partner.name %>
+</p>
+
+<%= link_to 'Edit', edit_partner_path(@partner) %> |
+<%= link_to 'Back', partners_path %>

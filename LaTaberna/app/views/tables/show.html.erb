@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @table.name %>
+</p>
+
+<p>
+  <strong>Win:</strong>
+  <%= @table.win %>
+</p>
+
+<p>
+  <strong>Played:</strong>
+  <%= @table.played %>
+</p>
+
+<p>
+  <strong>Loss:</strong>
+  <%= @table.loss %>
+</p>
+
+<p>
+  <strong>Position:</strong>
+  <%= @table.position %>
+</p>
+
+<p>
+  <strong>Difference:</strong>
+  <%= @table.difference %>
+</p>
+
+<%= link_to 'Edit', edit_table_path(@table) %> |
+<%= link_to 'Back', tables_path %>
