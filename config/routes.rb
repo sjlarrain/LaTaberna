@@ -4,7 +4,6 @@ Rails.application.routes.draw do
   resources :tables
   resources :matches
   resources :partners
-  devise_for :users
   devise_for :users, controllers: {
     sessions: 'users/sessions',
     registrations: 'users/registrations'
