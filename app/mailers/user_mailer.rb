@@ -1,5 +1,5 @@
 class UserMailer < ApplicationMailer
-    default from: Mouses <'mouses@clataberna.com'>
+    default from: 'mouses@clataberna.com'
     @@url  = 'https://clataberna.herokuapp.com/login'
     
     def registration_email
