@@ -14,7 +14,7 @@ class UserMailer < ApplicationMailer
         @user = params[:user]
         @partner = params[:partner]
         mail(
-            to: @partner.email
+            to: @partner.email,
             subject: "Solicitud de Pareja"
         )
 
@@ -24,7 +24,7 @@ class UserMailer < ApplicationMailer
         @user = params[:user]
         @partner = params[:partner]
         mail(
-            to: @user.email
+            to: @user.email,
             subject: "Solicitud aceptada"
         )
     end
@@ -33,7 +33,7 @@ class UserMailer < ApplicationMailer
         @user = params[:user]
         @partner = params[:partner]
         mail(
-            to: @user.email
+            to: @user.email,
             subject: "Solicitud Rechazada"
         )
     end
